@@ -19,11 +19,7 @@ router.patch(
   recipeController.updateSingleRecipe
 );
 
-router.delete(
-  '/:id',
-  auth(ENUM_USER_ROLE.ADMIN),
-  recipeController.deleteSingleRecipe
-);
+router.delete('/:id', recipeController.deleteSingleRecipe);
 router.get('/:id', recipeController.getSingleRecipe);
 router.get('/', recipeController.getRecipes);
 
