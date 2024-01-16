@@ -4,9 +4,9 @@ import { RecipeRoutes } from '../modules/recipe/recipe.route';
 const router = express.Router();
 
 const moduleRoutes = [
-  // ... routes
   {
     path: '/recipe',
+
     route: RecipeRoutes,
   },
 ];
