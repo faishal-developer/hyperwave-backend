@@ -7,7 +7,6 @@ const express_1 = __importDefault(require("express"));
 const recipe_route_1 = require("../modules/recipe/recipe.route");
 const router = express_1.default.Router();
 const moduleRoutes = [
-    // ... routes
     {
         path: '/recipe',
         route: recipe_route_1.RecipeRoutes,
